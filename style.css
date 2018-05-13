@@ -1,0 +1,346 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
+@import 'css/bootstrap/bootstrap.min.css';
+@import 'css/others/animate.css';
+@import 'css/others/magnific-popup.css';
+@import 'css/others/owl.carousel.min.css';
+@import 'css/others/font-awesome.min.css';
+@import 'css/others/pe-icon-7-stroke.css';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    z-index: auto;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #000000;
+    line-height: 1.3;
+}
+
+p {
+    color: #606060;
+    font-size: 18px;
+    line-height: 2;
+    font-weight: 400;
+}
+
+.pad-120 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+
+.pad-0-120 {
+    padding-top: 0;
+    padding-bottom: 120px;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    font-weight: 600;
+    outline: none;
+}
+
+li {
+    list-style: none;
+}
+
+.sh {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 55px;
+}
+
+.sh h4 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+    line-height: 1;
+}
+
+.sh-line {
+    width: 50px;
+    height: 2px;
+    background-color: #000;
+    margin: 0 auto;
+}
+
+#preloader {
+    overflow: hidden;
+    background-color: rgba(249, 249, 249, 0.97);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+}
+
+#preloader img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -16.5px;
+    margin-left: -14px;
+    z-index: 8;
+}
+
+.bg-gray {
+    background-color: #f9f9f9;
+}
+
+.loading {
+    -webkit-animation: 2000ms linear 0s normal none infinite running loading;
+    animation: 2000ms linear 0s normal none infinite running loading;
+    background: transparent none repeat scroll 0 0;
+    border-color: #dddddd #dddddd #ff6c00;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 4px;
+    height: 80px;
+    position: relative;
+    width: 80px;
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -40px;
+}
+
+@-webkit-keyframes loading {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loading {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.main {
+    width: 100%;
+    height: 770px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+}
+
+.main-content {
+    width: calc(50% - 15px);
+    background-color: #fff;
+    padding: 80px 0 50px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+}
+
+.main-content .main-text h2 {
+    font-size: 48px;
+    margin-bottom: 90px;
+    font-weight: 700;
+}
+
+.main-content .main-text > a {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ff6c00;
+    letter-spacing: 4px;
+}
+
+.main-content .main-text > a:hover {
+    color: #000000;
+}
+
+.main-content .main-text {
+    width: 540px;
+}
+
+
+.about .about-content {
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+}
+
+.about .about-thumb > img {
+    border-radius: 2px 0 0 2px;
+}
+
+.about .about-text {
+    padding: 15px 60px;
+}
+
+.about .about-text p {
+    margin-bottom: 0;
+}
+
+.small-card {
+    padding: 30px 30px 25px;
+    background-color: #fff;
+    margin-top: 70px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.card-title > img {
+    max-width: 35px;
+    margin-right: 20px;
+}
+
+.card-title {
+    margin-bottom: 25px;
+}
+
+.card-title > h5 {
+    margin-bottom: 0;
+    color: #ff6c00;
+}
+
+.small-card > p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.portfolio {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.portfolio .single-project {
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.portfolio .single-project img {
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.portfolio-hover-overlay {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 50px;
+    opacity: 0;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.portfolio-hover-overlay .portfolio-hover-text > a {
+    font-size: 26px;
+    color: #ff6c00;
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+.portfolio-hover-overlay .portfolio-hover-text > a {
+    font-size: 12px;
+    color: #959595;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    display: block;
+    letter-spacing: 2px;
+}
+
+.portfolio-hover-overlay .portfolio-hover-text > h3 {
+    color: #ff6c00;
+    margin-bottom: 0;
+}
+
+.portfolio .single-project:hover .portfolio-hover-overlay {
+    opacity: 1;
+}
+
+.portfolio .single-project:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+
+.tech {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.tech-logo {
+    -ms-flex-preferred-size: 16.66666666666667%;
+    flex-basis: 16.66666666666667%;
+    height: 180px;
+    width: 16.66666666666667%;
+    border: 1px solid #ebebeb;
+    background-color: #fff;
+    margin-right: -1px;
+    margin-top: -1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+#specialties {
+    padding-top: 120px;
+    margin-bottom: 20px;
+}
+
