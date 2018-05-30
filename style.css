@@ -114,11 +114,15 @@ li {
     background-color: #f9f9f9;
 }
 
+.red {
+    color: #db0011;
+}
+
 .loading {
     -webkit-animation: 2000ms linear 0s normal none infinite running loading;
     animation: 2000ms linear 0s normal none infinite running loading;
     background: transparent none repeat scroll 0 0;
-    border-color: #dddddd #dddddd #ff6c00;
+    border-color: #dddddd #dddddd #db0011;
     border-radius: 50%;
     border-style: solid;
     border-width: 4px;
@@ -157,9 +161,10 @@ li {
 .main {
     width: 100%;
     height: 770px;
-    background-image: url(img/bg-img/hero-1.jpg);
+    background-image: url(img/bg-img/campfire.jpg);
     background-size: 100%; 
     background-position: center;
+    background-repeat: none;
     position: relative;
     z-index: 1;
 }
@@ -167,7 +172,7 @@ li {
 .main-content {
     width: calc(50% - 15px);
     background-color: #fff;
-    padding: 80px 0 50px 0;
+    padding: 25px 0 40px 0;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -176,14 +181,14 @@ li {
 
 .main-content .main-text h2 {
     font-size: 48px;
-    margin-bottom: 90px;
+    margin-bottom: 40px;
     font-weight: 700;
 }
 
 .main-content .main-text > a {
     font-size: 12px;
     text-transform: uppercase;
-    color: #ff6c00;
+    color: #db0011;
     letter-spacing: 4px;
 }
 
@@ -202,16 +207,28 @@ li {
     border-radius: 2px;
 }
 
-.about .about-thumb > img {
+.about .about-thumb {
     border-radius: 2px 0 0 2px;
+    max-width: 250px;
+    max-height: 250px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    float: left;
+    clear: left;
 }
 
 .about .about-text {
+    display: flexbox;
     padding: 15px 60px;
+    justify-content: end;
 }
 
 .about .about-text p {
     margin-bottom: 0;
+}
+
+.who {
+    margin-bottom: 25px;
 }
 
 .small-card {
@@ -232,12 +249,21 @@ li {
 
 .card-title > h5 {
     margin-bottom: 0;
-    color: #ff6c00;
+    color: #db0011;
 }
 
 .small-card > p {
     margin-bottom: 0;
     font-size: 14px;
+}
+
+#send {
+    color: #db0011;
+}
+
+#cwu {
+    display: flex;
+    justify-content: center;
 }
 
 .portfolio {
@@ -253,6 +279,9 @@ li {
 }
 
 .portfolio .single-project img {
+    
+    max-width: 450px;
+    max-height: 395px;
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
 }
@@ -276,9 +305,9 @@ li {
 
 .portfolio-hover-overlay .portfolio-hover-text > a {
     font-size: 26px;
-    color: #ff6c00;
-    width: 40px;
-    height: 40px;
+    color: #db0011;
+    width: 90px;
+    height: 80px;
     display: block;
 }
 
@@ -292,7 +321,7 @@ li {
 }
 
 .portfolio-hover-overlay .portfolio-hover-text > h3 {
-    color: #ff6c00;
+    color: #db0011;
     margin-bottom: 0;
 }
 
@@ -344,4 +373,10 @@ li {
     padding-top: 120px;
     margin-bottom: 20px;
 }
+
+#linked {
+    margin-left: 20px;
+}
+
+
 

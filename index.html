@@ -20,9 +20,12 @@
     <section class="main" >
         <div class="main-content d-flex justify-content-end">
             <div class="main-text">
-                <h2>Zach Harmon</h2>
-                <h4>Full Stack Web Developer</h4>
+                <h2 class="red">Zach Harmon</h2>
+                <h4>Full Stack <span class="red">Web Developer</span></h4>
                 <h5>zachha@gmail.com</h5>
+                <a href="https://github.com/zachha" target="_blank"><i class="fa fa-5x fa-github-square" id="github"></i></a>
+                <a href="https://www.linkedin.com/in/zachha/" target="_blank"><i class="fa fa-5x fa-linkedin" id="linked"></i></a>
+                <br>
                 <a href="#projects" class="view-portfolio-btn" id="scrollDown"><i class="fa fa-plus" aria-hidden="true"></i> View My Projects</a>
             </div>
         </div>
@@ -33,7 +36,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="sh text-center">
-                        <h4>About Me</h4>
+                        <h4 class="red">About Me</h4>
                         <div class="sh-line"></div>
                     </div>
                 </div>
@@ -42,24 +45,23 @@
         <div class="container">
             <div class="about-content wow fadeInLeftBig" data-wow-delay="0.5">
                 <div class="row no-gutters align-items-center">
+                <!-- 
                     <div class="col-12 col-md-6">
                         <div class="about-thumb wow fadeIn" data-wow-delay="1s">
-                            <img src="img/bg-img/profpic.png" alt="">
+                            
                         </div>
                     </div>
-                    <div class="col-12 col-md-6">
+                -->
+                    <div class="col-10 col-md-10">
                         <div class="about-text wow fadeIn" data-wow-delay="1.5s">
-                            <h4>Who I Am</h4>
-                            <p>Full-Stack Developer with applied experience using Javascript, Node.js, React, Express.js, and mongoDB/MySQL using an MVC
-                            framework and Git as a VCS. I have a background in medical research as a cancer clinical trials researcher. I feel most at
-                            home when I am working on the back-end but I have experience building full-stack projects with React, HTML5, CSS3, bootstrap,
-                            and other front end technologies. I have worked on several projects with small teams using Git for version control. I have
+                            <h4 class="red who">Who I Am</h4>
+                            <img src="img/bg-img/profpic.png" alt="Zach Harmon picture" class="about-thumb">
+                            <p><span class="red">Full-Stack Developer with applied experience using Javascript, Node.js, React, Express.js, and mongoDB/MySQL using an MVC
+                            framework and Git as a VCS.</span> I have a background in medical research as a cancer clinical trials researcher. I have worked on several projects with small teams using Git for version control. I have
                             a strong grasp of JavaScript (including ES6+7) and I am always eager to learn better techniques and more efficient code.
                             I have experience working with relational databases using MySQL and the Sequelize ORM as well as non-relational databases
                             using MongoDB and the Mongoose ODM. I am driven to write precise and efficient code when using databases. (possibly because
-                            of a deep-seated, ever-present anxiety that I will somehow accidentally drop an entire database) When I'm not browsing the
-                            internet for for interesting articles and videos about JavaScript, (or spending 4 hours on Stack Overflow to try and fix
-                            a pesky bug...) I can usually be found enjoying a video game or out adventuring with my dog.</p>
+                            of a deep-seated, ever-present anxiety that I will somehow accidentally drop an entire database) When I'm not programming I can usually be found enjoying a video game, out taking pictures, or adventuring with my dog.</p>
                         </div>
                     </div>
                 </div>
@@ -69,7 +71,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="sh text-center" id="specialties">
-                        <h4>Specialties</h4>
+                        <h4 class="red">Specialties</h4>
                         <div class="sh-line"></div>
                     </div>
                 </div>
@@ -118,7 +120,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="sh text-center">
-                        <h4>Projects</h4>
+                        <h4 class="red">Projects</h4>
                         <div class="sh-line"></div>
                     </div>
                 </div>
@@ -130,50 +132,38 @@
         <div class="container-fluid">
             <div class="row no-gutters portfolio">
                 <div class="col-12 col-sm-6 col-md-4 single-project branding wow fadeInUp" data-wow-delay="0.2s">
-                    <img src="img/portfolio-img/p-1.jpg" alt="">
+                    <img src="img/portfolio-img/eventhoplogo.jpg" alt="EventHop Logo">
                     <div class="portfolio-hover-overlay d-flex justify-content-between">
                         <div class="portfolio-hover-view">
-                            <a href="single-portfolio.html"><img src="img/icons/plus.png" alt=""></a>
+                            <a href="http://eventhop.herokuapp.com/" target="_blank" class="red"><img src="img/icons/plus.png" alt=""></a>
                         </div>
                         <div class="portfolio-hover-text">
-                            <a href="#">full-stack web application</a>
+                            <a href="http://eventhop.herokuapp.com/" target="_blank">full-stack web application</a>
                             <h3>EventHop</h3>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 single-project branding wow fadeInUp" data-wow-delay="0.4s">
-                    <img src="img/portfolio-img/p-2.jpg" alt="">
+                <div class="col-12 col-sm-6 col-md-4 single-project branding wow fadeInUp" data-wow-delay="0.4s" id="cwu">
+                    <img src="img/portfolio-img/cwulogo.png" alt="Code With Us Logo">
                     <div class="portfolio-hover-overlay d-flex justify-content-between">
                         <div class="portfolio-hover-view">
-                            <a href="single-portfolio.html"><img src="img/icons/plus.png" alt=""></a>
+                            <a href="http://code-withus.herokuapp.com/" target="_blank" class="red"><img src="img/icons/plus.png" alt=""></a>
                         </div>
                         <div class="portfolio-hover-text">
-                            <a href="#">full-stack web application</a>
+                            <a href="http://code-withus.herokuapp.com/" target="_blank">full-stack web application</a>
                             <h3>Code With Us</h3>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 single-project design wow fadeInUp" data-wow-delay="0.6s">
-                    <img src="img/portfolio-img/p-3.jpg" alt="">
+                    <img src="img/portfolio-img/nodelogo.svg" alt="Node Storefront Logo">
                     <div class="portfolio-hover-overlay d-flex justify-content-between">
                         <div class="portfolio-hover-view">
-                            <a href="single-portfolio.html"><img src="img/icons/plus.png" alt=""></a>
+                            <a href="https://github.com/zachha/node-storefront" target="_blank" class="red"><img src="img/icons/plus.png" alt=""></a>
                         </div>
                         <div class="portfolio-hover-text">
-                            <a href="#"></a>
+                            <a href="https://github.com/zachha/node-storefront" target="_blank">Node.js CLI application</a>
                             <h3>Node Storefront</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 single-project graphic wow fadeInUp" data-wow-delay="0.8s">
-                    <img src="img/portfolio-img/p-4.jpg" alt="">
-                    <div class="portfolio-hover-overlay d-flex justify-content-between">
-                        <div class="portfolio-hover-view">
-                            <a href="single-portfolio.html"><img src="img/icons/plus.png" alt=""></a>
-                        </div>
-                        <div class="portfolio-hover-text">
-                            <a href="#">graphic</a>
-                            <h3>Medium Scraper</h3>
                         </div>
                     </div>
                 </div>
@@ -181,14 +171,13 @@
         </div>
     </section>
     <!-- ****** Gallery Area End ****** -->
-
-    <!-- ****** Clients Area Start ****** -->
+<!-- 
     <section class="tech-area bg-gray pad-120" id="technnologies">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="sh text-center">
-                        <h4>Proficient Technologies</h4>
+                        <h4 class="red">Proficient Technologies</h4>
                         <div class="sh-line"></div>
                     </div>
                 </div>
@@ -197,51 +186,51 @@
             <div class="row">
                 <div class="col-12">
                     <div class="tech d-flex">
-                        <!-- Single clients -->
+                        
                         <div class="tech-logo">
                             <a href="#"><img src="img/clients-img/1.png" alt=""></a>
                         </div>
-                        <!-- Single clients -->
+                        
                         <div class="tech-logo">
                             <a href="#"><img src="img/clients-img/2.png" alt=""></a>
                         </div>
-                        <!-- Single clients -->
+                        
                         <div class="tech-logo">
                             <a href="#"><img src="img/clients-img/3.png" alt=""></a>
                         </div>
-                        <!-- Single clients -->
+                        
                         <div class="tech-logo">
                             <a href="#"><img src="img/clients-img/4.png" alt=""></a>
                         </div>
-                        <!-- Single clients -->
+                        
                         <div class="tech-logo">
                             <a href="#"><img src="img/clients-img/5.png" alt=""></a>
                         </div>
-                        <!-- Single clients -->
+                        
                         <div class="tech-logo">
                             <a href="#"><img src="img/clients-img/2.png" alt=""></a>
                         </div>
-                        <!-- Single clients -->
+                        
                         <div class="tech-logo">
                             <a href="#"><img src="img/clients-img/4.png" alt=""></a>
                         </div>
-                        <!-- Single clients -->
+                        
                         <div class="tech-logo">
                             <a href="#"><img src="img/clients-img/5.png" alt=""></a>
                         </div>
-                        <!-- Single clients -->
+                        
                         <div class="tech-logo">
                             <a href="#"><img src="img/clients-img/2.png" alt=""></a>
                         </div>
-                        <!-- Single clients -->
+                        
                         <div class="tech-logo">
                             <a href="#"><img src="img/clients-img/1.png" alt=""></a>
                         </div>
-                        <!-- Single clients -->
+                        
                         <div class="tech-logo">
                             <a href="#"><img src="img/clients-img/4.png" alt=""></a>
                         </div>
-                        <!-- Single clients -->
+                        
                         <div class="tech-logo">
                             <a href="#"><img src="img/clients-img/3.png" alt=""></a>
                         </div>
@@ -250,7 +239,7 @@
             </div>
         </div>
     </section>
-    <!-- ****** Clients Area End ****** -->
+-->
 
 
     <!-- ****** Contact Area Start ****** -->
@@ -259,7 +248,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="sh text-center">
-                        <h4>Contact</h4>
+                        <h4 class="red">Contact</h4>
                         <div class="sh-line"></div>
                     </div>
                 </div>
@@ -308,7 +297,7 @@
                                         </div>
                                         <!-- Single Input Area Start -->
                                         <div class="col-12 text-center">
-                                            <button type="submit" class="btn">Send Message</button>
+                                            <button type="submit" class="btn" id="send">Send Message</button>
                                         </div>
                                     </div>
                                 </div>
