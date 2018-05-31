@@ -170,7 +170,7 @@ li {
 }
 
 .main-content {
-    width: calc(50% - 15px);
+    width: calc(50% - 110px);
     background-color: #fff;
     padding: 25px 0 40px 0;
     position: absolute;
@@ -378,5 +378,15 @@ li {
     margin-left: 20px;
 }
 
+.tech-logo > a {
+    color: #000000;
+}
 
+.tech-logo > a:hover {
+    color: #db0011;
+}
+
+#zachEmail {
+    margin-bottom: 40px;
+}
 
