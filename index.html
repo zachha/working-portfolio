@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Zach Harmon Portfolio</title>
     <link rel="icon" href="img/icons/favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
     <link href="css/responsive/responsive.css" rel="stylesheet">
 </head>
@@ -19,12 +20,12 @@
 
     <section class="main" >
         <div class="main-content d-flex justify-content-end">
-            <div class="main-text">
+            <div class="main-text text-center">
                 <h2 class="red">Zach Harmon</h2>
                 <h4>Full Stack <span class="red">Web Developer</span></h4>
-                <h5>zachha@gmail.com</h5>
-                <a href="https://github.com/zachha" target="_blank"><i class="fa fa-5x fa-github-square" id="github"></i></a>
-                <a href="https://www.linkedin.com/in/zachha/" target="_blank"><i class="fa fa-5x fa-linkedin" id="linked"></i></a>
+                <h5 id="zachEmail">zachha@gmail.com</h5>
+                <a href="https://github.com/zachha" target="_blank"><i class="fab fa-5x fa-github-square" id="github"></i></a>
+                <a href="https://www.linkedin.com/in/zachha/" target="_blank"><i class="fab fa-5x fa-linkedin" id="linked"></i></a>
                 <br>
                 <a href="#projects" class="view-portfolio-btn" id="scrollDown"><i class="fa fa-plus" aria-hidden="true"></i> View My Projects</a>
             </div>
@@ -43,17 +44,10 @@
             </div>
         </div>
         <div class="container">
-            <div class="about-content wow fadeInLeftBig" data-wow-delay="0.5">
+            <div class="about-content wow fadeInLeftBig" data-wow-delay="0.6">
                 <div class="row no-gutters align-items-center">
-                <!-- 
-                    <div class="col-12 col-md-6">
-                        <div class="about-thumb wow fadeIn" data-wow-delay="1s">
-                            
-                        </div>
-                    </div>
-                -->
                     <div class="col-10 col-md-10">
-                        <div class="about-text wow fadeIn" data-wow-delay="1.5s">
+                        <div class="about-text wow fadeIn" data-wow-delay="0.6s">
                             <h4 class="red who">Who I Am</h4>
                             <img src="img/bg-img/profpic.png" alt="Zach Harmon picture" class="about-thumb">
                             <p><span class="red">Full-Stack Developer with applied experience using Javascript, Node.js, React, Express.js, and mongoDB/MySQL using an MVC
@@ -81,7 +75,7 @@
             <div class="row">
                 <!-- Single Feature -->
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="small-card wow fadeInUp" data-wow-delay="1s">
+                    <div class="small-card wow fadeInUp" data-wow-delay="0.6s">
                         <div class="card-title d-flex align-items-center">
                             <img src="img/icons/wallet.svg" alt="">
                             <h5>Front-End</h5>
@@ -91,7 +85,7 @@
                 </div>
                 <!-- Single Feature -->
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="small-card wow fadeInUp" data-wow-delay="1.5s">
+                    <div class="small-card wow fadeInUp" data-wow-delay="1.0s">
                         <div class="card-title d-flex align-items-center">
                             <img src="img/icons/credit-card.svg" alt="">
                             <h5>Back-End</h5>
@@ -101,7 +95,7 @@
                 </div>
                 <!-- Single Feature -->
                 <div class="col-12 col-lg-4">
-                    <div class="small-card wow fadeInUp" data-wow-delay="2s">
+                    <div class="small-card wow fadeInUp" data-wow-delay="1.4s">
                         <div class="card-title d-flex align-items-center">
                             <img src="img/icons/switching-user.svg" alt="">
                             <h5>Team Skills</h5>
@@ -131,7 +125,7 @@
 
         <div class="container-fluid">
             <div class="row no-gutters portfolio">
-                <div class="col-12 col-sm-6 col-md-4 single-project branding wow fadeInUp" data-wow-delay="0.2s">
+                <div class="col-12 col-sm-6 col-md-4 single-project branding wow fadeInUp" data-wow-delay="0.5s">
                     <img src="img/portfolio-img/eventhoplogo.jpg" alt="EventHop Logo">
                     <div class="portfolio-hover-overlay d-flex justify-content-between">
                         <div class="portfolio-hover-view">
@@ -143,7 +137,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 single-project branding wow fadeInUp" data-wow-delay="0.4s" id="cwu">
+                <div class="col-12 col-sm-6 col-md-4 single-project branding wow fadeInUp" data-wow-delay="0.9s" id="cwu">
                     <img src="img/portfolio-img/cwulogo.png" alt="Code With Us Logo">
                     <div class="portfolio-hover-overlay d-flex justify-content-between">
                         <div class="portfolio-hover-view">
@@ -155,7 +149,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 single-project design wow fadeInUp" data-wow-delay="0.6s">
+                <div class="col-12 col-sm-6 col-md-4 single-project design wow fadeInUp" data-wow-delay="1.3s">
                     <img src="img/portfolio-img/nodelogo.svg" alt="Node Storefront Logo">
                     <div class="portfolio-hover-overlay d-flex justify-content-between">
                         <div class="portfolio-hover-view">
@@ -171,7 +165,6 @@
         </div>
     </section>
     <!-- ****** Gallery Area End ****** -->
-<!-- 
     <section class="tech-area bg-gray pad-120" id="technnologies">
         <div class="container">
             <div class="row">
@@ -188,58 +181,57 @@
                     <div class="tech d-flex">
                         
                         <div class="tech-logo">
-                            <a href="#"><img src="img/clients-img/1.png" alt=""></a>
+                            <a href="https://www.javascript.com/" target="_blank"><i class="fab fa-5x fa-js"></i></a>
                         </div>
                         
                         <div class="tech-logo">
-                            <a href="#"><img src="img/clients-img/2.png" alt=""></a>
+                            <a href="https://reactjs.org/" target="_blank"><i class="fab fa-5x fa-react"></i></a>
                         </div>
                         
                         <div class="tech-logo">
-                            <a href="#"><img src="img/clients-img/3.png" alt=""></a>
+                            <a href="https://nodejs.org/en/" target="_blank"><i class="fab fa-5x fa-node-js"></i></a>
                         </div>
                         
                         <div class="tech-logo">
-                            <a href="#"><img src="img/clients-img/4.png" alt=""></a>
+                            <a href="https://www.w3.org/standards/techs/css#w3c_all" target="_blank"><i class="fab fa-5x fa-css3-alt"></i></a>
                         </div>
                         
                         <div class="tech-logo">
-                            <a href="#"><img src="img/clients-img/5.png" alt=""></a>
+                            <a href="https://www.w3.org/html/" target="_blank"><i class="fab fa-5x fa-html5"></i></a>
                         </div>
                         
                         <div class="tech-logo">
-                            <a href="#"><img src="img/clients-img/2.png" alt=""></a>
+                            <a href="https://github.com/" target="_blank"><i class="fab fa-5x fa-git-square"></i></a>
                         </div>
                         
                         <div class="tech-logo">
-                            <a href="#"><img src="img/clients-img/4.png" alt=""></a>
+                            <a href="https://github.com/" target="_blank"><i class="fab fa-5x fa-github"></i></a>
                         </div>
                         
                         <div class="tech-logo">
-                            <a href="#"><img src="img/clients-img/5.png" alt=""></a>
+                            <a href="https://www.mysql.com/" target="_blank"><img src="img/technologies-img/mysql2.png" alt="mysql logo"></a>
                         </div>
                         
                         <div class="tech-logo">
-                            <a href="#"><img src="img/clients-img/2.png" alt=""></a>
+                            <a href="https://www.mongodb.com/" target="_blank"><img src="img/technologies-img/mongodb.png" alt="mongodb logo"></a>
                         </div>
                         
                         <div class="tech-logo">
-                            <a href="#"><img src="img/clients-img/1.png" alt=""></a>
+                            <a href="https://jquery.com/" target="_blank"><img src="img/technologies-img/jquery.png" alt="jquery logo"></i></a>
                         </div>
                         
                         <div class="tech-logo">
-                            <a href="#"><img src="img/clients-img/4.png" alt=""></a>
+                            <a href="https://www.npmjs.com/" target="_blank"><i class="fab fa-5x fa-npm"></i></a>
                         </div>
                         
                         <div class="tech-logo">
-                            <a href="#"><img src="img/clients-img/3.png" alt=""></a>
+                            <a href="https://aws.amazon.com/" target="_blank"><i class="fab fa-5x fa-aws"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
--->
 
 
     <!-- ****** Contact Area Start ****** -->
@@ -259,7 +251,7 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-10">
-                        <div class="contact_from wow fadeInDown" data-wow-delay="1.5s">
+                        <div class="contact_from wow fadeInDown" data-wow-delay="0.6s">
                             <form name="contact" method="post" id="main_contact_form" netlify>
                                 <!-- Message Input Area Start -->
                                 <div class="contact_input_area">
@@ -286,7 +278,7 @@
                                         <!-- Single Input Area Start -->
                                         <div class="col-12 col-md-6">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" name="number" id="number" placeholder="Telephone" required>
+                                                <input type="text" class="form-control" name="number" id="number" placeholder="Telephone">
                                             </div>
                                         </div>
                                         <!-- Single Input Area Start -->
