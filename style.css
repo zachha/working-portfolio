@@ -170,7 +170,7 @@ li {
 }
 
 .main-content {
-    width: calc(50% - 110px);
+    width: 35%;
     background-color: #fff;
     padding: 25px 0 40px 0;
     position: absolute;
@@ -270,6 +270,10 @@ li {
     border-color: #db0011;
 }
 #cwu {
+    display: flex;
+    justify-content: center;
+}
+#eh {
     display: flex;
     justify-content: center;
 }
