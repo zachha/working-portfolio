@@ -162,7 +162,7 @@ li {
     width: 100%;
     height: 770px;
     background-image: url(img/bg-img/campfire.jpg);
-    background-size: 100%; 
+    background-size: cover; 
     background-position: center;
     background-repeat: none;
     position: relative;
@@ -269,13 +269,27 @@ li {
     color: #db0011;
     border-color: #db0011;
 }
+
 #cwu {
     display: flex;
     justify-content: center;
 }
+
 #eh {
+    background: black;
     display: flex;
     justify-content: center;
+}
+
+#ns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ns > img {
+    width: 450px;
+    height: 395px;
 }
 
 .portfolio {
